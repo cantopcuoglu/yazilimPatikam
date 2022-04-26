@@ -40,15 +40,17 @@ public class Main {
         muzik = input.nextInt();
         boolean sonuc5 = muzik >= gecerNot;
         String str5 =(sonuc5) ? "Gectiniz!" : "Kaldiniz!";
-        System.out.println(str5);
-        int derslerToplamý = ( mat +fizik +kimya +turkce +tarih +muzik );
-        System.out.println("Toplam ders sayiniz kactýr? Dogru yaziniz!:");
-        dersSayisi = input.nextInt();
-        int toplamDersOrtalamasi = derslerToplamý / dersSayisi;
-        System.out.println("Not ortalamanýz aþaðýdadýr");
-        System.out.println(toplamDersOrtalamasi);
 
+        System.out.println(str5);
+        int derslerToplami = ( mat +fizik +kimya +turkce +tarih +muzik );
+        System.out.println("Toplam ders sayiniz kactir? Dogru yaziniz!:");
+        dersSayisi = input.nextInt();
+        int toplamDersOrtalamasi = derslerToplami / dersSayisi;
+
+        System.out.println("Not ortalamaniz asagidadir");
+        System.out.println(toplamDersOrtalamasi);
         boolean sonuc6 = toplamDersOrtalamasi >= gecerNot;
+
         String str6 =(sonuc6) ? "Sinifi gectiniz.Tebrikler!" : "Kaldiniz!";
         System.out.println(str6);
 
